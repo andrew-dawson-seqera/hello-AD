@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Hello Pipeline Parameters",
+    "description": "A super simple hello world pipeline",
+    "type": "object",
+    "properties": {
+        "greeting": {
+            "type": "string",
+            "default": "Hello",
+            "description": "The greeting to use",
+            "enum": ["Hello", "Hola", "Bonjour", "Ciao"]
+        }
+    }
+}
