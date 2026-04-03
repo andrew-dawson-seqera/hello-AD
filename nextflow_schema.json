@@ -24,5 +24,4 @@
             "enum": ["Hello", "Hola", "Bonjour", "Ciao"]
         }
     },
-    "required": ["input", "outdir"]
 }
