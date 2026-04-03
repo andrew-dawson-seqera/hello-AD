@@ -4,11 +4,25 @@
     "description": "A super simple hello world pipeline",
     "type": "object",
     "properties": {
+        "input": {
+            "type": "string",
+            "format": "file-path",
+            "description": "Path to input file or samplesheet",
+            "help_text": "Use this to specify the location of your input file(s). Can be a local path or a path within a mounted data link."
+        },
+        "outdir": {
+            "type": "string",
+            "format": "directory-path",
+            "description": "The output directory where results will be saved",
+            "help_text": "You can browse and select from your mounted data links in Seqera Platform.",
+            "fa_icon": "fas fa-folder-open"
+        },
         "greeting": {
             "type": "string",
             "default": "Hello",
             "description": "The greeting to use",
             "enum": ["Hello", "Hola", "Bonjour", "Ciao"]
         }
-    }
+    },
+    "required": ["input", "outdir"]
 }
