@@ -1,8 +1,10 @@
 {
-    "$schema": "https://json-schema.org/draft-07/schema",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/yourname/yourpipeline/master/nextflow_schema.json",
     "title": "Hello Pipeline Parameters",
     "description": "A super simple hello world pipeline",
     "type": "object",
+    "definitions": {},
     "properties": {
         "input": {
             "type": "string",
