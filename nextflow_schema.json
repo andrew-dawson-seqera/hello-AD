@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$schema": "https://json-schema.org/draft-07/schema",
     "title": "Hello Pipeline Parameters",
     "description": "A super simple hello world pipeline",
     "type": "object",
@@ -7,15 +7,12 @@
         "input": {
             "type": "string",
             "format": "file-path",
-            "description": "Path to input file or samplesheet",
-            "help_text": "Use this to specify the location of your input file(s). Can be a local path or a path within a mounted data link."
+            "description": "Path to input file or samplesheet"
         },
         "outdir": {
             "type": "string",
             "format": "directory-path",
-            "description": "The output directory where results will be saved",
-            "help_text": "You can browse and select from your mounted data links in Seqera Platform.",
-            "fa_icon": "fas fa-folder-open"
+            "description": "The output directory where results will be saved"
         },
         "greeting": {
             "type": "string",
@@ -23,5 +20,5 @@
             "description": "The greeting to use",
             "enum": ["Hello", "Hola", "Bonjour", "Ciao"]
         }
-    },
+    }
 }
